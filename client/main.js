@@ -8,15 +8,7 @@ import {Players} from './../imports/api/players';
 
 import TitleBar from './../imports/ui/TitleBar';
 import AddPlayer from './../imports/ui/AddPlayer';
-import Player from './../imports/ui/Player';
-
-
-// Render players in the client
-const renderPlayers = playersList => {
-  return playersList.map(player => {
-    return <Player key={player._id} player={player}/>;
-  });
-};
+import PlayerList from './../imports/ui/PlayerList';
 
 
 // Start App
@@ -32,7 +24,7 @@ Meteor.startup(() => {
       <div>
         <TitleBar title={title}/>
 
-        {renderPlayers(players)}
+        <PlayerList players={players}/>
 
         <AddPlayer/>
       </div>
