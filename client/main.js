@@ -36,9 +36,10 @@ Meteor.startup(() => {
     const players = Players.find().fetch();
 
     // Render player data
+    const title = "Score Keep";
     const jsx = (
       <div>
-        <TitleBar/>
+        <TitleBar title={title}/>
 
         {renderPlayers(players)}
 
