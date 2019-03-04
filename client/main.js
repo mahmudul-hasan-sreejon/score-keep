@@ -11,12 +11,12 @@ import App from './../imports/ui/App';
 
 // Start App
 Meteor.startup(() => {
-  // Autorun data update
+  // Auto-run data update
   Tracker.autorun(() => {
     const title = "Score Keep";
 
-    // Fetch all player data
-    const players = Players.find().fetch();
+    // Fetch all player data by sorting score in descending order
+    const players = Players.find({}, {sort: {score: -1}}).fetch();
 
     ReactDOM.render(<App title={title} players={players}/>, document.getElementById('app'));
   });
