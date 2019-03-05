@@ -1,8 +1,12 @@
 // Variables
-$gold: #ddc54bcc;
-$silver: #d8d8d8cc;
-$bronze: #c09b63cc;
+$gold: #ddc54b;
+$gold-alt: darken($gold, 15%);
+$silver: #d8d8d8;
+$silver-alt: darken($silver, 15%);
+$bronze: #c09b63;
+$bronze-alt: darken($bronze, 15%);
 
+// Resets & defaults
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +19,7 @@ html {
 body {
   background: #f2f2f2;
   color: #555555;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, monospace, Arial, sans-serif;
   font-size: 1.6rem;
 }
 
@@ -28,6 +32,7 @@ h1 {
   font-size: 2.4rem;
 }
 
+// Partial imports
 @import './components/title-bar';
 @import './components/wrapper';
 @import './components/item';
