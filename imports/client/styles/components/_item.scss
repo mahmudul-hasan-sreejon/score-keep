@@ -5,6 +5,18 @@
   padding: 1.3rem;
 }
 
+.item--position-1 {
+  background: $gold;
+}
+
+.item--position-2 {
+  background: $silver;
+}
+
+.item--position-3 {
+  background: $bronze;
+}
+
 .item__message {
   font-size: 1.3rem;
   font-style: italic;
