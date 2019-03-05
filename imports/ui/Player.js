@@ -12,15 +12,13 @@ export default class Player extends React.Component {
     const playerScore = this.props.player.score;
 
     return (
-      <div>
-        <p key={playerId}>
-          {playerName} has {playerScore} point(s).
+        <div key={playerId} className='item'>
+          <p>{playerName} has {playerScore} point(s).</p>
 
           <button onClick={() => Players.update({_id: playerId}, {$inc: {score: 1}})}>+1</button>
           <button onClick={() => Players.update({_id: playerId}, {$inc: {score: -1}})}>-1</button>
           <button onClick={() => Players.remove({_id: playerId})}>X</button>
-        </p>
-      </div>
+        </div>
     );
   }
 }

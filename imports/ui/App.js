@@ -6,8 +6,6 @@ import TitleBar from './TitleBar';
 import AddPlayer from './AddPlayer';
 import PlayerList from './PlayerList';
 
-// import Player from './Player';
-
 
 export default class App extends React.Component {
   render() {
@@ -18,9 +16,11 @@ export default class App extends React.Component {
       <div>
         <TitleBar title={title}/>
 
-        <PlayerList players={players}/>
+        <div className='wrapper'>
+          <PlayerList players={players}/>
 
-        <AddPlayer/>
+          <AddPlayer/>
+        </div>
       </div>
     );
   }
