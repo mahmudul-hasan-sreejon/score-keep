@@ -5,9 +5,13 @@ import PropTypes from 'prop-types';
 
 export default class TitleBar extends React.Component {
   render() {
+    const title = this.props.title;
+
     return (
-      <div>
-        <h1>{this.props.title}</h1>
+      <div className='title-bar'>
+        <div className='wrapper'>
+          <h1>{title}</h1>
+        </div>
       </div>
     );
   }
