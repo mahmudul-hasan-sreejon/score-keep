@@ -15,9 +15,9 @@ export default class Player extends React.Component {
         <div key={playerId} className='item'>
           <p>{playerName} has {playerScore} point(s).</p>
 
-          <button onClick={() => Players.update({_id: playerId}, {$inc: {score: 1}})}>+1</button>
-          <button onClick={() => Players.update({_id: playerId}, {$inc: {score: -1}})}>-1</button>
-          <button onClick={() => Players.remove({_id: playerId})}>X</button>
+          <button className='button button--round' onClick={() => Players.update({_id: playerId}, {$inc: {score: 1}})}>+1</button>
+          <button className='button button--round' onClick={() => Players.update({_id: playerId}, {$inc: {score: -1}})}>-1</button>
+          <button className='button button--round' onClick={() => Players.remove({_id: playerId})}>X</button>
         </div>
     );
   }
