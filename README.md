@@ -1,6 +1,8 @@
 # Score Keep
 
-A simple web app based on `Meteor` and `React Native`.
+A simple web app based on `Meteor` and `React`.
+
+This app can be found: [score-keep-mhs.herokuapp.com](https://score-keep-mhs.herokuapp.com/)
 
 ## Technologies & Tools Used
 
