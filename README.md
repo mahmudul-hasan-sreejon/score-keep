@@ -1,8 +1,6 @@
 # Score Keep
 
-A simple web app based on `Meteor` and `React`.
-
-This app can be found: [score-keep-mhs.herokuapp.com](https://score-keep-mhs.herokuapp.com/)
+A simple online scoreboard web app built using [Meteor](https://www.meteor.com/) and [React](https://reactjs.org/).
 
 ## Technologies & Tools Used
 
@@ -11,4 +9,4 @@ This app can be found: [score-keep-mhs.herokuapp.com](https://score-keep-mhs.her
 
 ## Author
 
-Created and maintained by Mahmudul Hasan Sreejon ([@mahmudul-hasan-sreejon](http://mahmudulhasansreejon.ml/)).
+Created and maintained by Mahmudul Hasan Sreejon ([@mahmudul-hasan-sreejon](https://mahmudul-hasan-sreejon.com/)).
